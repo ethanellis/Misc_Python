@@ -37,7 +37,7 @@ while True:
         global grid
         global grid2
         for n in range(side):
-            for m in range(side): #yes, manual cell checking rather than using nested for-loops. This was early in my career.
+            for m in range(side): #yes, manual cell checking rather than using nested for-loops. This was early in my career. Also made it more straightforward (albeit more tedious) to check cases at edge of grid. Programmed so that grid wraps in on itself.
                 if n == 0:
                     if m == 0:
                         #print('TL')
